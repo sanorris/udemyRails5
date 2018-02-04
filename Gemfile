@@ -57,3 +57,5 @@ gem 'devise', '~> 4.4'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 
+gem 'snorris_view_tool', git: 'https://github.com/sanorris/snorris_view_tool'
+

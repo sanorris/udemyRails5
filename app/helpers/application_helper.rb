@@ -17,4 +17,8 @@ module ApplicationHelper
     end 
   end
 
+  def copyright_generator
+    SnorrisViewTool::Renderer.copyright 'Seth Norris', 'All rights reserved'
+  end
+
 end
