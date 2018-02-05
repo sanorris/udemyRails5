@@ -13,18 +13,22 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
 
-    <%= render "shared/nav", location: 'top' %>
+      <!--p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p-->
 
-    <%= login_helper %>
+      <%= render "shared/nav"%>
 
-    <%= yield %>
+      <%= yield %>
+      
+      <%= source_helper("application") %>
 
-    <br>
-    <%= copyright_generator %>
-
-    <%= source_helper("application") %>
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p><%= copyright_generator %></p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

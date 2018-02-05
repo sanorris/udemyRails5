@@ -1,7 +1,14 @@
-<div class="<%= location %>">
-  <div><%= link_to "Home", root_path %></div>
-  <div><%= link_to "About Me", about_me_path %></div>
-  <div><%= link_to "Contact", contact_path %></div>
-   <div><%= link_to "Blog", blogs_path %></div>
-  <div><%= link_to "Portfolio", portfolios_path %></div>
-</div>
+<header class="masthead mb-auto">
+  <div class="inner">
+    <h3 class="masthead-brand">Seth Norris</h3>
+    <nav class="nav nav-masthead justify-content-center">
+      <!--a class="nav-link active" href="#">Home</a-->
+      <%= link_to "Home", root_path, class: "nav-link" %>
+      <%= link_to "About Me", about_me_path, class: "nav-link" %>
+      <%= link_to "Contact", contact_path, class: "nav-link" %>
+      <%= link_to "Blog", blogs_path, class: "nav-link" %>
+      <%= link_to "Portfolio", portfolios_path, class: "nav-link" %>
+      <%= login_helper %>
+    </nav>
+   </div>
+</header>
