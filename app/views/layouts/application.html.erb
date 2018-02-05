@@ -18,17 +18,13 @@
       <!--p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p-->
 
-      <%= render "shared/nav"%>
+      <%= render "shared/nav" %>
 
       <%= yield %>
       
       <%= source_helper("application") %>
 
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p><%= copyright_generator %></p>
-        </div>
-      </footer>
+      <%= render "shared/footer" %>
     </div>
   </body>
 </html>
