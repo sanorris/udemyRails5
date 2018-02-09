@@ -20,17 +20,17 @@
       <div class="container">
         <h1 class="blog-title">The Bootstrap Blog</h1>
         <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+        <%= link_to 'Write a new blog', new_blog_path if logged_in?(:site_admin)%>
       </div>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 blog-main">
 
-          <%= yield %>
+        <%= yield %>
 
-<!-- Start of Side Bar -->
-          <div class="col-sm-3 offset-sm-1 blog-sidebar">
+        <!-- Start of Side Bar -->
+        <div class="col-sm-3 offset-sm-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
             <h4>About</h4>
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
@@ -71,11 +71,9 @@
           </p>
         </footer>
         <!-- End of Footer -->
-
           
+          <%= source_helper("blog") %>        
 
-          <%= source_helper("blog") %>
-        </div>
       </div>
     </div>
 
