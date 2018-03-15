@@ -1,13 +1,9 @@
 <header class="masthead mb-auto">
   <div class="inner">
     <h3 class="masthead-brand">Seth Norris</h3>
-    <nav class="nav nav-masthead justify-content-center">
+    <nav class="nav nav-masthead justify-content-center app-nav">
       <!--a class="nav-link active" href="#">Home</a-->
-      <%= link_to "Home", root_path, class: "nav-link" %>
-      <%= link_to "About Me", about_me_path, class: "nav-link" %>
-      <%= link_to "Contact", contact_path, class: "nav-link" %>
-      <%= link_to "Blog", blogs_path, class: "nav-link" %>
-      <%= link_to "Portfolio", portfolios_path, class: "nav-link" %>
+      <%= nav_helper "nav-link", "span" %> 
       <%= login_helper "nav-link" %>
     </nav>
    </div>
