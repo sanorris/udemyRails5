@@ -62,3 +62,4 @@ gem 'snorris_view_tool', git: 'https://github.com/sanorris/snorris_view_tool'
 
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'jquery-ui-rails'
