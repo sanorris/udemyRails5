@@ -63,3 +63,8 @@ gem 'snorris_view_tool', git: 'https://github.com/sanorris/snorris_view_tool'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'jquery-ui-rails'
+
+gem 'carrierwave', '~> 1.2', '>= 1.2.2'
+gem 'mini_magick', '~> 4.8'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
