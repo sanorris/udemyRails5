@@ -28,7 +28,7 @@ class PortfoliosController < ApplicationController
   end
 
   def create
-    binding.pry
+    #binding.pry
     @portfolio_item = Portfolio.new(portfolio_params)
 
     respond_to do |format|
@@ -74,6 +74,8 @@ class PortfoliosController < ApplicationController
         :title, 
         :subtitle, 
         :body, 
+        :main_image,
+        :thumb_image,
         technologies_attributes: [:name]
       )
     end

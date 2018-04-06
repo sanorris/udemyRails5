@@ -30,7 +30,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  /*background-color: #333;*/
 }
 
 body {
@@ -109,7 +109,7 @@ body {
  * Footer
  */
 .mastfoot {
-  color: rgba(255, 255, 255, .5);
+  color: white;
 }
 
 /*
@@ -136,6 +136,21 @@ body {
 
 .app-nav span {
   margin-right:20px;
+}
+
+#back_cover {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); 
+  background: image-url('back_cover.jpg') no-repeat;
+  background-size: cover;
 }
 
 
